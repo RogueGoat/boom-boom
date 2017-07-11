@@ -4,6 +4,6 @@
   }
 
   angular
-    .module('blocitoff')
+    .module('BoomBoom')
     .factory('List', ['$firebaseArray', List]);
 })();

@@ -1,0 +1,19 @@
+.jumbotron-edit {
+  background-color: #fc4ebc;
+  color: #64efcc;
+  border-radius: 4px 4px 0 0;
+  text-align: center;
+  min-height: 300px;
+  border-bottom: 5px solid #64efcc;
+}
+
+.title {
+   padding-top: 100px;
+   font-size: 44px;
+   font-family: 'Luckiest Guy', cursive;
+ }
+
+p {
+  font-family: 'Lato', sans-serif;
+  text-shadow: none;
+}

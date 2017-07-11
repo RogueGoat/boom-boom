@@ -15,4 +15,5 @@
     }
      angular
       .module('BoomBoom', ['ui.router', 'firebase'])
+      .config(config);
  })();
