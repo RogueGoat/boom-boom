@@ -1,12 +1,25 @@
 <header class="navbar-nav">
   test
 </header>
+<center>
+<body>
   <div class="jumbotron jumbotron-edit">
     <h1 class="title">BOOM - BOOM</h1>
     <p>Smash that list with your fist! (Metaphorically, that is.)</p>
   </div>
-<body>
-  <form>
-
-  </form>
+  <div class="container">
+    <div class="row">
+      <div class="list col-sm-6">
+       <h2 class="list-name">{{ list.name }}</h2>
+         <p>
+           <ul>
+             list items go here
+           </ul>
+         </p>
+        </div>
+        <button class="btn btn-success" ng-click="new()">Create New List</button>
+      </div>
+    </div>
+  </div>
 </body>
+</center>
