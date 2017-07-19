@@ -12,9 +12,11 @@
       <div class="list col-sm-6">
        <h2 class="list-name">{{ list.name }}</h2>
          <p>
-           <ul>
-             list items go here
+           <div class = "list-content" ng-repeat = "list in lists">
+            <ul>
+              <li> {{ message.username }} : {{ message.content }} </li>
            </ul>
+         </div>
          </p>
         </div>
         <button class="btn btn-success" ng-click="new()">Create New List</button>

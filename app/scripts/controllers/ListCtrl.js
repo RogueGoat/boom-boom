@@ -1,6 +1,9 @@
 (function() {
    function ListCtrl($scope, $uibModal, List, $cookies) {
-     $scope.allLists = List.all;
+     var List = {};
+     var ref = firebase.database().ref().child("list");
+     var listItems = $firebaseArray(ref);
+     List.all = listItems;
 
      $scope.new = function() {
        var modalInstance = $uibModal.open({
@@ -9,6 +12,8 @@
          controller: 'NewListCtrl'
        })
      }
+
+     return List;
    }
 
    angular
