@@ -8,7 +8,7 @@
 
         $stateProvider
             .state('list', {
-                url: '/',
+                url: '',
                 controller: 'ListCtrl as list',
                 templateUrl: '/templates/list.html'
             });

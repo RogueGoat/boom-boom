@@ -2,12 +2,8 @@
   function NewListCtrl($scope, $uibModalInstance){
     $scope.text = "";
 
-    $scope.create = function(){
-        $uibModalInstance.close($scope.text);
-    };
-
     $scope.cancel = function() {
-        $uibModalInstance.dismiss('cancel');
+        $uibModal.dismiss('cancel');
     };
 
   }

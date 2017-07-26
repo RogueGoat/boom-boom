@@ -5,13 +5,13 @@
      var listItems = $firebaseArray(ref);
      List.all = listItems;
 
-     $scope.new = function() {
-       var modalInstance = $uibModal.open({
-         animation: true,
-         templateURL: '/templates/newlist.html',
-         controller: 'NewListCtrl'
-       })
-     }
+     $scope.create = function(){
+         $uibModal.open({
+           animation: true,
+           templateUrl: '/templates/newlist.html',
+           conroller: 'NewListCtrl.js'
+         });
+     };
 
      return List;
    }
