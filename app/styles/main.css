@@ -1,5 +1,5 @@
 .jumbotron-edit {
-  background-color: #fc4ebc;
+  background-color: #719184;
   color: #64efcc;
   border-radius: 4px 4px 0 0;
   text-align: center;
@@ -7,9 +7,40 @@
   border-bottom: 5px solid #64efcc;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+body.background {
+  background-color: #fdd3ff;
+}
+
+.sidebar {
+  margin-top: 30px;
+  margin-right: 20px;
+  padding-top: 30px;
+  height: 100vw;
+  width: 300px;
+  background-color: #64efcc;
+}
+
+.btn-boomboom {
+  margin: 20px 20px 0 0;
+  float: right;
+  border-radius: 30px !important;
+  background-color: #64efcc;
+  color: #696969;
+  text-transform: uppercase;
+  font-family: 'Luckiest Guy', cursive;
+}
+.btn-boomboom:hover {
+  background-color: white;
+  color: #64efcc !important;
+}
+
 .title {
    padding-top: 100px;
-   font-size: 44px;
+   font-size: 50px;
    font-family: 'Luckiest Guy', cursive;
  }
 

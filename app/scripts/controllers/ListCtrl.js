@@ -1,5 +1,5 @@
 (function() {
-   function ListCtrl($scope, $uibModal, List, $cookies) {
+   function ListCtrl($scope, $uibModal, List) {
      var List = {};
      var ref = firebase.database().ref().child("list");
      var listItems = $firebaseArray(ref);
@@ -18,5 +18,5 @@
 
    angular
      .module('BoomBoom')
-     .controller('ListCtrl', ['$scope', '$uibModal', 'List', '$cookies', ListCtrl]);
+     .controller('ListCtrl', ['$scope', '$uibModal', 'List', ListCtrl]);
  })();

@@ -8,12 +8,12 @@
 
         $stateProvider
             .state('list', {
-                url: '',
+                url: '/',
                 controller: 'ListCtrl as list',
                 templateUrl: '/templates/list.html'
             });
     }
      angular
-      .module('BoomBoom', ['ui.router', 'firebase'])
+      .module('BoomBoom', ['ui.router', 'firebase', 'ui.bootstrap'])
       .config(config);
  })();
