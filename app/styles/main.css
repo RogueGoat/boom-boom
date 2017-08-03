@@ -11,10 +11,6 @@ h1, h2, h3, h4, h5 {
   font-family: 'Luckiest Guy', cursive;
 }
 
-body.background {
-  background-color: #fdd3ff;
-}
-
 .sidebar {
   margin-top: 30px;
   margin-right: 20px;
@@ -50,15 +46,16 @@ p {
 }
 
 .list {
-    max-width: 500px;
+    /*max-width: 500px;*/
     margin-top: 100px;
     padding: 50px 0 50px 0;
-    background-color: #eeeeee;
+    background-color: #719184;
     color:  black;
     border-radius: 4px;
     text-align: center;
 }
 .list-name {
-  color: #fc4ebc;
+  color: #64efcc;
+  padding-bottom: 15px;
   border-bottom: 3px solid #64efcc;
 }
