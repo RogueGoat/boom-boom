@@ -7,6 +7,13 @@
   border-bottom: 5px solid #64efcc;
 }
 
+.btn-custom {
+  border-radius: 4em;
+  background-color: #719184;
+  color: white;
+
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Luckiest Guy', cursive;
 }
