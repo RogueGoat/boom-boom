@@ -1,7 +1,7 @@
 <body class="background">
   <center>
     <div class="jumbotron-edit">
-      <button class="btn btn-boomboom" ng-click="create()">Create New List</button>
+      <button class="btn btn-boomboom" ng-click="createList()">Create New List</button>
       <h1 class="title">BOOM - BOOM</h1>
       <p>Smash that list with your fist! (Metaphorically, that is.)</p>
     </div>
@@ -11,10 +11,11 @@
         <div class="row">
           <div class="sidebar col-sm-3 pull-left">
             <h2>Lists:</h2>
-            <div class="list-content" ng-repeat="list in lists">
-              <p>{{ list.name }}</p>
+            <div class="list-content" ng-repeat="lists in listName">
+              <p>{{ lists.$value }}</p>
             </div>
           </div>
+
           <div class="list col-sm-8">
            <h2 class="list-name">{{ list.name }}</h2>
              <p>

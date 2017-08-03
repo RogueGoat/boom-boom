@@ -1,19 +1,14 @@
 (function() {
    function ListCtrl($scope, $uibModal, List) {
-     var List = {};
-     var ref = firebase.database().ref().child("list");
-     var listItems = $firebaseArray(ref);
-     List.all = listItems;
+    $scope.listName = List.all;
 
-     $scope.create = function(){
+     $scope.createList = function(){
          $uibModal.open({
            animation: true,
            templateUrl: '/templates/newlist.html',
-           conroller: 'NewListCtrl.js'
-         });
+           conroller: 'NewListCtrl'
+         })
      };
-
-     return List;
    }
 
    angular

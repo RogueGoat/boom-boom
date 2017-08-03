@@ -1,13 +1,18 @@
-<div class="modal-header">
-    <h3 class="modal-title text-center">Add some Tasks!</h3>
+<main class = "form-box">
+  <div class="modal-header">
+      <h3 class="modal-title text-center">Need a new List to DESTORY?</h3>
+  </div>
+<div class = "add-room">
+  <label for="newListInput">Name it:</label>
+    <form ng-submit="addList(newList)">
+    <input ng-model="newList" placeholder="List Name Here!" type="text">
+
+        <p>
+            <button class = "btn btn-custom">Create</button>
+        </p>
+    </form>
+<div class = "delete">
+  <button class="btn" type="button" ng-click="cancel()">Cancel</button>
 </div>
-<div class="modal-body">
-    <div class="form-group modal-input">
-        <label for="newListInput">Name it:</label>
-        <input id="newListInput" type="text" ng-model="text">
-    </div>
 </div>
-<div class="modal-footer">
-    <button class="btn btn-success" type="button" ng-click="create()">Create List</button>
-    <button class="btn" type="button" ng-click="cancel()">Cancel</button>
-</div>
+</main>

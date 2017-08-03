@@ -11,11 +11,15 @@ h1, h2, h3, h4, h5 {
   font-family: 'Luckiest Guy', cursive;
 }
 
+h2 {
+  padding-bottom: 15px;
+}
+
 .sidebar {
   margin-top: 30px;
   margin-right: 20px;
   padding-top: 30px;
-  height: 100vw;
+  height: auto;
   width: 300px;
   background-color: #64efcc;
 }
@@ -47,7 +51,7 @@ p {
 
 .list {
     /*max-width: 500px;*/
-    margin-top: 100px;
+    margin-top: 30px;
     padding: 50px 0 50px 0;
     background-color: #719184;
     color:  black;

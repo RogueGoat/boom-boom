@@ -1,14 +1,23 @@
 (function() {
-  function NewListCtrl($scope, $uibModalInstance){
-    $scope.text = "";
+  function NewListCtrl($scope, List, $uibModalInstance){
+    $scope.list = null;
+    $scope.addList = function(newList){
+    if (newList !== undefined){
+                  List.makeList(newList);
+                  $uibModalInstance.close();
 
+                } else if (newList === undefined){
+                     $uibModalInstance.close();
+                  }
+                }
+                
     $scope.cancel = function() {
-        $uibModal.dismiss('cancel');
+         $uibModalInstance.close();
     };
 
   }
 
   angular
     .module('BoomBoom')
-    .controller('NewListCtrl', ['$scope', '$uibModalInstance', NewListCtrl])
+    .controller('NewListCtrl', ['$scope', 'List', '$uibModalInstance', NewListCtrl])
 })();
