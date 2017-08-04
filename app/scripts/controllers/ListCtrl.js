@@ -2,6 +2,7 @@
    function ListCtrl($scope, $uibModal, List, Items) {
     $scope.listName = List.all;
     $scope.listItems = {};
+    $scope.currentList = {};
 
     $scope.setCurrentList = function(list){
            $scope.currentList = list;

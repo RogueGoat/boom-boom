@@ -1,0 +1,32 @@
+<body class="background">
+  <center>
+    <div class="jumbotron-edit">
+      <p><a ui-sref="/" class="btn btn-boomboom">Back to the Present</a></p>
+      <h1 class="title">Blast from the PAST</h1>
+      <p>View your previously smashed lists!</p>
+    </div>
+
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="sidebar col-sm-3 pull-left">
+            <h2>Lists:</h2>
+            <div class="list-content" ng-repeat="lists in listName">
+              <p>{{ lists.$value }}</p>
+            </div>
+          </div>
+
+          <div class="list col-sm-8">
+           <h2 class="list-name">{{ list.name }}</h2>
+             <p>
+               <ol>
+                  <li> List content to go here </li>
+               </ol>
+             </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </center>
+</body>

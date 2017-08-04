@@ -2,6 +2,7 @@
   <center>
     <div class="jumbotron-edit">
       <button class="btn btn-boomboom" ng-click="createList()">Create New List</button>
+      <p><a ui-sref="old" class="btn btn-boomboom">View Old Lists</a></p>
       <h1 class="title">BOOM - BOOM</h1>
       <p>Smash that list with your fist! (Metaphorically, that is.)</p>
     </div>
@@ -11,18 +12,19 @@
         <div class="row">
           <div class="sidebar col-sm-3 pull-left">
             <h2>Lists:</h2>
-            <div class="list-content" ng-repeat="lists in listName">
+            <div class="list-content" ng-repeat="lists in listName" ng-click="setCurrentList(list)">
               <p>{{ lists.$value }}</p>
             </div>
           </div>
 
           <div class="list col-sm-8">
-           <h2 class="list-name">{{ list.name }}</h2>
+           <h2 class="list-name">{{ currentList }}</h2>
              <p>
                <ol>
-                  <li> List content to go here </li>
+                  <li> {{ currentList.content }} </li>
                </ol>
              </p>
+             <p><button class="btn btn-boomboom2">Update List</button></p>
             </div>
           </div>
         </div>

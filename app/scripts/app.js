@@ -7,6 +7,11 @@
              });
 
         $stateProvider
+          .state('old', {
+                url: '/oldlists',
+                controller: 'OldListCtrl as oldlists',
+                templateUrl: '/templates/oldlists.html'
+              })
             .state('list', {
                 url: '/',
                 controller: 'ListCtrl as list',
