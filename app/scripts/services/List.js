@@ -2,11 +2,12 @@
   function List($firebaseArray) {
       var ref = firebase.database().ref().child("lists");
       var listOfLists = $firebaseArray(ref);
+      var defaultListType = 'unknown';
 
       return {
          all: listOfLists,
          makeList: function(newList){
-           create_list(newList, 'unknown');
+           create_list(newList, defaultListType);
          },
          create_list: create_list,
      };
